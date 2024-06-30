@@ -1,0 +1,14 @@
+{
+  "name": "module_4",
+  "version": "1.0.0",
+  "description": "Packaged needed for the lab exersizes of module 4.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Karlijn Zaanen",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
