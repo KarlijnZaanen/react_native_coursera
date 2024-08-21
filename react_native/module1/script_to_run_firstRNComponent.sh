@@ -10,3 +10,4 @@ cd firstRNComponent
 npx expo start
 # And that works! 
 # If that doesn't work (error 115), then force quit the simulator and try again (some update will be installed)
+# OR try running npm run ios, sometimes that also works.
