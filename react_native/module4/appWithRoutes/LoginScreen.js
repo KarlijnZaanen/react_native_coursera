@@ -7,7 +7,8 @@ import {
   Pressable,
 } from 'react-native';
 
-export default function LoginScreen() {
+export default function LoginScreen( { navigation }) {
+  // Notice that we can use the navigation property without explicitly passing it in the App.js file because each screen component in your app is provided with the navigation prop automatically. 
   const [email, onChangeEmail] = useState('');
   const [password, onChangePassword] = useState('');
 
@@ -30,7 +31,7 @@ export default function LoginScreen() {
         keyboardType={'default'}
         secureTextEntry={true}
       />
-      <Pressable onPress={() => {}} style={styles.button}>
+      <Pressable onPress={() => navigation.navigate('Welcome')} style={styles.button}>
         <Text style={styles.buttonText}>Log in</Text>
       </Pressable>
     </ScrollView>
