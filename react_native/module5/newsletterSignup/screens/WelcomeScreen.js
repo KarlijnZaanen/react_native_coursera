@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { View, Text, Image, StyleSheet, Pressable } from 'react-native';
+import { View, Text, Image, Pressable } from 'react-native';
+import styles from '../Styles'
 
 
 const WelcomeScreen = ({ navigation }) => {
@@ -19,33 +20,3 @@ const WelcomeScreen = ({ navigation }) => {
 
 
 export default WelcomeScreen;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  logo: {
-     height: 100,
-     width: 300,
-     resizeMode: 'contain',
-  },
-  button: {
-    fontSize: 22,
-    padding: 10,
-    marginVertical: 8,
-    margin: 40,
-    backgroundColor: '#EDEFEE',
-    borderColor: '#EDEFEE',
-    borderWidth: 2,
-    borderRadius: 12
-  },
-  regularText: {
-    fontSize: 24,
-    padding: 20,
-    marginVertical: 8,
-    color: 'black',
-    textAlign: 'center',
-  },
-});
-
-
