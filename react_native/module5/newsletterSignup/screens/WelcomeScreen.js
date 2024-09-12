@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { View, Text, StyleSheet, TextInput, Pressable } from 'react-native';
+import { View, Text, Image, StyleSheet, Pressable } from 'react-native';
 
 
 const WelcomeScreen = ({ navigation }) => {
   return (
-  <View>
+  <View style={styles.container}>
+  <Image style={styles.logo} source={require('../assets/little-lemon-logo.png')} />
   <Text style={styles.regularText}>Little Lemon, your local Mediterranean Bistro </Text>
   <Pressable
     style={styles.button}
@@ -23,6 +24,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  logo: {
+     height: 100,
+     width: 300,
+     resizeMode: 'contain',
+  },
   button: {
     fontSize: 22,
     padding: 10,
@@ -33,27 +39,12 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderRadius: 12
   },
-  headerText: {
-    padding: 40,
-    fontSize: 30,
-    color: '#EDEFEE',
-    textAlign: 'center',
-  },
   regularText: {
     fontSize: 24,
     padding: 20,
     marginVertical: 8,
     color: 'black',
     textAlign: 'center',
-  },
-  inputBox: {
-    height: 40,
-    margin: 12,
-    borderWidth: 1,
-    padding: 10,
-    fontSize: 16,
-    borderColor: 'EDEFEE',
-    backgroundColor: '#EDEFEE',
   },
 });
 
