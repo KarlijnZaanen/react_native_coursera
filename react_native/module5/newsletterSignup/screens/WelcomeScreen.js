@@ -6,10 +6,12 @@ import styles from '../Styles'
 const WelcomeScreen = ({ navigation }) => {
   return (
   <View style={styles.container}>
-  <Image style={styles.logo} source={require('../assets/little-lemon-logo.png')} />
+  <Image style={styles.logo}
+         source={require('../assets/little-lemon-logo.png')}
+         accessibilityLabel={'Little Lemon Logo'}/>
   <Text style={styles.regularText}>Little Lemon, your local Mediterranean Bistro </Text>
   <Pressable
-    style={styles.button}
+    style={[styles.button, styles.enabledButton]}
     onPress={() => navigation.navigate('Subscribe')}>
     <Text style={styles.buttonText}>
       {'Newsletter'}
