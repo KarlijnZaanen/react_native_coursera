@@ -1,0 +1,9 @@
+Please do not include ".node_modules" and ".expo" folders in the zipped archive, as they should be generated when the user installs dependencies and runs the app. 
+
+Good for you to have updated the dependencies in package.json to allow testing on real devices as well. 
+
+Your solution to arrange content in the Subscribe screen is clever, but unfortunately when testing it on iOS simulator it doesn't solve the problem of the keyboard hiding the text input when shown. Arranging content to the top of the screen or use KeyboardAvoidingView should solve the issue. 
+
+There is an unused RootNavigator.js in the project root - it's a good practice to clean up unused code. 
+
+Use keyboardType to set the keyboard for entering an email address, to help the user.
