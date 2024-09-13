@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Alert, View, Text, Image, TextInput, Pressable } from 'react-native';
+import { Alert, KeyboardAvoidingView, Text, Image, TextInput, Platform, Pressable } from 'react-native';
 import styles from '../Styles'
 import { validateEmail } from '../utils';
 
@@ -15,7 +15,8 @@ const SubscribeScreen = () => {
   }, [email]);
 
   return (
-  <View style={styles.container}>
+  <KeyboardAvoidingView style={styles.container}
+                        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
   <Image style={styles.logo}
          source={require('../assets/little-lemon-logo-grey.png')} 
          accessibilityLabel={'Little Lemon Logo'}/>
@@ -24,7 +25,8 @@ const SubscribeScreen = () => {
     style={styles.input} 
     value={email} 
     onChangeText={onChangeEmail} 
-    placeholder={'Type your email'} 
+    placeholder={'Type your email'}
+    keyboardType={"email"}
   /> 
   <Pressable
     disabled={disable}
@@ -34,7 +36,7 @@ const SubscribeScreen = () => {
       {'Subscribe'}
     </Text>
   </Pressable>
-  </View>);
+  </KeyboardAvoidingView>);
 
 };
 
