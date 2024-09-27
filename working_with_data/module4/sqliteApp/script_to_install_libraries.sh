@@ -3,6 +3,6 @@ npm install expo-sqlite # here, we need to install the specific version as menti
 npm install # on the edited json 
 
 # Or directly run
-npm install expo-sqlite@~4.3.0
+npm install expo-sqlite@~10.3.0
 
 npm install react-native-paper
