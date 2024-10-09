@@ -1,2 +1,2 @@
 # react_native_coursera
-Repository for pet projects and the https://www.coursera.org/specializations/meta-react-native specialisation on Coursera.
+Repository for the React Native specialisation on course on Coursera (https://www.coursera.org/specializations/meta-react-native specialisation on Coursera).
